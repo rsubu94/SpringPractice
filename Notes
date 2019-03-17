@@ -1,0 +1,41 @@
+Spring - it is an framework to ease the Java EE development
+       - current version is 5
+       - Lightweight framework 
+       - work with java pojo
+       - DI to promote loose coupling
+       - AOP 
+       - minimize boiler-plate code
+       
+Core Container -
+            
+                Beans(main) - bean factory to create beans
+                    Spring Bean - When java objects are created by the spring container,then spring refers to them as "Spring Beans"
+                Core 
+                spEL - spring expression language
+                Context
+                
+Infrastructure :
+Aspect Oriented Programming(AOP) -
+        
+            - Used to create applicationwide services like 
+              logging,security,instrumentation,transactions
+              
+Data Access Layer - to communicate with database like JDBC
+                    Using spring jdbc helper we can reduce the code to 50%
+                    
+                    ORM - object relational mapping like hibernate 
+       
+Spring Containers or generally known as ApplicationContext:
+    Primary Functions:
+            1. Inversion of Control
+            2. Dependency Injection
+            
+    Configuring Spring Container;
+            1. XML Configuration (Legacy Process)
+            2. Java Annotations
+            3. Java Source Code
+            
+    Spring Development Process:
+            1. Configure  your Spring Beans
+            2. Create a Spring container
+            3. retreive beans from spring containers
