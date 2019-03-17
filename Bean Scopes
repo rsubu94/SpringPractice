@@ -1,0 +1,21 @@
+Bean Scopes
+        Here scope refers to lifecycle of the bean
+            1. like how long doews live
+            2. how many instances created
+            3. how is bean shared
+        Default Scope of the bean is Singleton (cached in memory)
+
+Available Scopes
+    1. Singleton 
+    2. Prototype
+    3. request
+    4. session
+    5. global-session
+    
+Bean Lifecycle :
+    
+    Container Started --> Bean Instantiated --> Dependencies Injected --> Internal Spring Processing --> custom init method -->  Bean ready to start --> context shutdown(Bean destruction)
+    
+It is possible to add custom code during BEAN INITIALIZATION (init-method) and BEAN DESTRUCTION(destroy-method)
+    like calling custom business logic
+    setting up  or cleaning up handles like db ,sockets,file

@@ -1,0 +1,22 @@
+Inversion of Control:
+        -The approach of outsourcing the construction and management of objects
+        -it's nothing but the application gonna outsource the construction and managemnet of objects ,it will be handled by object factory(Bean Factory)
+        -
+Dependency Injection:
+        - outsource the construction and injection of ur objects to external entity.
+        - allow the program design to follow the dependency injection principle.
+        - "dependency "same thing as "helper objects"
+
+    Injection Types:
+            1. Constructor Injection
+            2. Setter Injection
+        
+        Development Process : Constructor Injection
+            1. Define the dependency interface and class
+            2. Create a constructor in your class for injections
+            3. Configure the dependency injection in Spring config file
+
+        Development Process : Setter Injection
+            1. Create a setter method in the class
+            2. configure the setter in the config
+            3. retreive it
