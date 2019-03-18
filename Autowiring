@@ -1,0 +1,11 @@
+Spring Autowiring:
+    1. For Dependency Injection spring can use autowiring
+    2. Spring will look for a class that matches the property
+            matches by type : class or interface
+    3. Then spring inject it automatically ..hence it is autowiring
+
+Autowiring Injection Types:
+    
+    1. Constructor Injection
+    2. Setter Injection
+    3. Field Injections

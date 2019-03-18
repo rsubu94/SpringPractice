@@ -1,0 +1,18 @@
+Java Annotations:
+        1. Special labels/markers added to the class
+        2. Provide metadata about the class
+        3. Processes at compile-time or run-time for special processing
+
+Disadv of using XML annotations:
+        1.It is verbose
+        
+With annotation what Spring will do
+        
+            1. Scan your classes for java annotations.
+            2. Automatically register the beans in the spring container.
+            
+Development Process:
+        
+        1. Enable the component scanning in the config file
+        2. Add @Component annotations to the class
+        3. retreive it from spring container
