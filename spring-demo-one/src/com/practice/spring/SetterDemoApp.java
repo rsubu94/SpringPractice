@@ -16,7 +16,7 @@ public class SetterDemoApp {
 		System.out.println(cricketCoach.getDailyFortune());
 
 		//call our new methods to get literals
-		//cricketCoach.setEmailAddress("rsubu.mani@hotmail.com");
+
 		System.out.println(cricketCoach.getEmailAddress());
 		System.out.println(cricketCoach.getTeam());
 
