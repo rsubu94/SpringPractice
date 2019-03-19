@@ -8,4 +8,8 @@ Autowiring Injection Types:
     
     1. Constructor Injection
     2. Setter Injection
-    3. Field Injections
+    3. Field Injections - Injecting dependencies by setting field values on your class directly (even private fields).
+                            It is accomplished by Reflection
+                            
+Annotatios autowiring and  Qualifiers:
+    

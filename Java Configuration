@@ -1,0 +1,11 @@
+Java Configuration through source code (Pure Java Configuration)
+    
+    Instead configuring the spring container using XML 
+    Using java code to configure the same (Without XMl)
+    
+    Development Process:
+            1. Create a jav class and annotate as @Configuration
+            2. Add Component scan support @ComponentScan(optional)
+            3. Read spring java config class
+            4. Retrieve bean from spring container
+            

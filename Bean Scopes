@@ -1,6 +1,6 @@
 Bean Scopes
         Here scope refers to lifecycle of the bean
-            1. like how long doews live
+            1. like how long does live
             2. how many instances created
             3. how is bean shared
         Default Scope of the bean is Singleton (cached in memory)
