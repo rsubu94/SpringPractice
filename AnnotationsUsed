@@ -1,0 +1,46 @@
+AnnotationsUsed
+	
+		@Autowired,
+		@Component,
+		@Value("samplevalue"), 
+			to access the property file values we should create id for the property file in XML config file and it shouls be accessed by #{BeanId Name},to Access particular key then we should acces it with ${keyname}
+		@Qualifier,
+		@Scope("singletonorprototype"),
+		@Configuration
+		@ComponentScan()
+		@PropertySource()
+		@Bean
+		@PreDestroy
+		@PostConstruct
+
+MVC Based Annotations
+		@Controller
+		@RequestMapping
+		@RequestParam
+		@GetMapping
+		@Valid
+		@ModelAttribute - Model,ModelMap
+			BindingResult class is used the used to bind the final output,it should be used as parameter immediately after the annoatation @ModelAttribute
+	Hibernate Validator based annoatations
+		@NotNull
+		@Max
+		@Min
+		@Size
+		@Pattern
+		Customized Annotations
+			@Constraint(Validatedby=name of the our custom class Name)
+			@Rentention(RetentionPolicy.RUNTIME) - how long our custom annoattion needed
+			@Target({ElementType.METHOD,ElementType.FIELD}) - where should it target
+			@interface
+			All custom annoation helper class must implements ConstraintValidator interface
+				- initialize method
+				- isValid method
+			
+		Custom Annotation should have 
+				public String value() default "";
+				public String message() default "";
+				public Class<?>[] groups() default{};
+				public Class<? extends Payload>[] payload() default {};
+
+		@InitBinder - all request of controller will be pre-processed - it is used check leading and trailing whitespaces in the string
+				Used Classes - WebDataBinder,StringTrimmerEditor	

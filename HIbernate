@@ -1,0 +1,46 @@
+Hibernate(ORM Tool)- A Framework for persisting/saving java objects in a database
+	1. Handles all of the low-level SQL
+	2. Minimizes the amount of JDBC code you have to develop
+	3. Provides the ORM - defining mapping between Java class and database table 
+
+	Storing the data into the Database
+		
+		1. session.save(object name) - returns an ID which is a primary key
+
+	Retrieving a data from a database
+		
+		2. session.get(Student.class,theId) - theId is returned primary key
+
+	Quering for Java Objects
+
+		3. Query query = session.createQuery("from Student"); - Hibernate Query Language(HQL)
+
+		List<Student> students = query.list(); - returns a list of student objects from the databases
+
+Hibernate uses JDBC for all db commn - it is  another layer of on extraction top of JDBC
+ - it is done HIbernate APi's
+
+usrnaem : hbstudent
+pwd : hbstudent
+
+Two Key Players
+	SessionFactory - Reads the config file
+					 Create Session Objects
+					 Heavy-weight object
+					 Only create once in your app
+
+	Session       - Wraps a JDBC connection
+					Main object used to save/retrieve objects
+					Short-lived object
+					Retreived from sessionFactory
+
+					# Root logger option
+log4j.rootLogger=DEBUG, stdout
+ 
+# Redirect log messages to console
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+ 
+#log4j.logger.org.hibernate=TRACE

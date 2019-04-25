@@ -1,0 +1,14 @@
+Hibernate Annotations :
+	@Entity
+	@Table(name="tablename")
+	@Id - primary key
+	@Column(name="columnname")
+	@GeneratedValue(strategy=GenerationType.IDENTITY) - used to generate ID 
+
+ID Generation Strategy
+	AUTO
+	IDENTITY
+	SEQUENCE
+	TABLE
+
+SequenceGenerator - is used to create custom generator by overriding generate()

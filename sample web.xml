@@ -1,0 +1,19 @@
+<servlet>
+
+//setting dispatcher servlet
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class></servlet-class>
+
+//setting spring config files
+
+    <init-param>
+        <param-name></param-name>
+        <param-value>{path where the spring config file present}</param-value>
+    </init-param>
+    
+//servlet mapping
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/<url-pattern>
+    </servlet-mapping>
+</servlet>

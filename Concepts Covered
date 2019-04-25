@@ -1,0 +1,33 @@
+*Till now used xml tags and annotations
+
+  1.  <bean id="{beanid}" class="{package name}" scope="{scope of the object}" init-method="{method to be called at initialization}" destroy-method="{method to be called at destruction}"></bean>
+  
+  2. <bean id="{beanid}" class="{packagename}">
+    <constructor-arg ref="{beanidname}">
+    </bean>
+    
+    3. 2. <bean id="{beanid}" class="{packagename}">
+    <constructor-arg ref="{beanidname}">
+    <property name="{name of the property}" value="{value to be feeded}">
+    <property name="{name of the property}" value="${value to be feeded}">
+    </bean>
+    
+    4. <context:component-scan base-package="{package name }"/>
+    
+    5. <context:property-placeholder location="{location of the property file}"/>
+    
+    6.ClassPathXmlApplicationContext
+    
+    7.AnnotationConfigApplicationContext
+    
+    8. @Autowired,
+       @Component , 
+       @Value("sample value") ,
+       @Qualifier , 
+       @Scope("singleton or prototype") ,
+       @Configuration
+        @ComponentScan()
+        @PropertySource()
+        @Bean
+        @PreDestroy
+        @PostConstruct
