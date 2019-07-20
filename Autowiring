@@ -13,3 +13,11 @@ Autowiring Injection Types:
                             
 Annotatios autowiring and  Qualifiers:
     
+    Crit c= sesiom.createCriteria(Classnmae.class)
+    Criterion cc = Restrictions.lt();
+    c.setFirstResult(1)
+    c.setMaxResults(50)
+    classname c =(classnamw ) c.uniqurResult()+
+
+    c.setResultTransformer(DistinctRootEntityResultTransformer.INSTANCE)
+    c.addOrder(Order.desc("columnname"))

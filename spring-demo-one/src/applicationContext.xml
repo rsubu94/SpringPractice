@@ -18,6 +18,7 @@
 	<bean id="myFortune"
 		class="com.practice.spring.HappyFortuneService"></bean>
 
+
 	<!-- <bean id="myCoach" class="com.practice.spring.BaseballCoach"> <constructor-arg 
 		ref="myFortune" /> </bean> -->
 
