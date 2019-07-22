@@ -11,7 +11,7 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private String country;
-	// private LinkedHashMap<String, String> countryOptions;
+	//private LinkedHashMap<String, String> countryOptionsR;
 	private String favoriteLanguage;
 	private LinkedHashMap<String, String> favoriteLanguageOptions;
 	private String[] operatingSystems;
@@ -34,12 +34,12 @@ public class Student {
 	}
 
 	public Student() {
-//		countryOptions = new LinkedHashMap<>();
-//		countryOptions.put("BR","Brazil");
-//		countryOptions.put("FR","France");
-//		countryOptions.put("DE","Germany");
-//		countryOptions.put("IN","India");
-//		countryOptions.put("US","United States of America");
+//		countryOptionsR = new LinkedHashMap<>();
+//		countryOptionsR.put("BR","Brazil");
+//		countryOptionsR.put("FR","France");
+//		countryOptionsR.put("DE","Germany");
+//		countryOptionsR.put("IN","India");
+//		countryOptionsR.put("US","United States of America");
 
 		favoriteLanguageOptions = new LinkedHashMap<>();
 		favoriteLanguageOptions.put("Java", "Java");
@@ -78,9 +78,9 @@ public class Student {
 	}
 
 //	public Map<String, String> getCountryOptions() {
-//		return countryOptions;
+//		return countryOptionsR;
 //	}
-//
+
 	public void setCountry(String country) {
 		this.country = country;
 	}
